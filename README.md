@@ -64,19 +64,19 @@ As séries temporais serão ajustadas para cada um dos modelos contidos nos tipo
 
 ### ETS
 Modelos:
-- Suavização Exponencial Simples com \alpha=0.2;
-- Suavização Exponencial Dupla Linear com \alpha=0.6 e \beta=0.2;
+- Suavização Exponencial Simples com <img src="https://render.githubusercontent.com/render/math?math=\alpha=0.2" />;
+- Suavização Exponencial Dupla Linear com <img src="https://render.githubusercontent.com/render/math?math=\alpha=0.2" /> e <img src="https://render.githubusercontent.com/render/math?math=\beta=0.2" />;
 - Método Holt-Winters Tendência e Sazonalidade Aditivos; 
 - Método Holt-Winters Tendência Aditiva Sazonalidade Multiplicativa;
 - Método Holt-Winters Tendência Aditiva Sazonalidade Multiplicativa; 
 - Método Holt-Winters Tendência e Sazonalidade Multiplicativos
 
-Obs 1: os métodos Holt-Winters utilizam transformação Box-Cox prévia e nível de suavização \alpha=0.6
+Obs 1: os métodos Holt-Winters utilizam transformação Box-Cox prévia e nível de suavização <img src="https://render.githubusercontent.com/render/math?math=\alpha=0.6" /> <br/>
 Obs 2: O modelo ETS mais preciso será definido pela menor raiz do erro médio quadrado (RMSE) encontrada na diferença entre o modelo e os dados de treino.
 
 ### ARIMA
 
-- Parâmetro "d" definido de acordo com resultado do teste ADF.
+- Parâmetro "d" definido de acordo com resultado do teste Dickey-Fuller Aumentado (ADF).
 - Parâmetro "D" fixo em 1.
 - Parâmetros restantes ajustados caso a caso de acordo com inferếncias realizadas em cada série.
 
