@@ -9,14 +9,14 @@
 - [Coleta de Dados]()
 - [Limpeza de Dados]()
 - [Tratamento de Dados]()
-- [Análise Exploratória]()
+- [Análise Exploratória](https://github.com/vcwild/wtp-eda)
 
 # Apresentação <a name="ovr"></a>
 ## Previsão de Séries Temporais
 
 O projeto tem objetivo de gerar previsões por modelagem de séries temporais.
 
-## Escopo do projeto
+## Escopo do Projeto
 
 - Receber dados tratados da etapa anterior
 - Identificar padrôes representados pela sequência dos dados
@@ -28,8 +28,8 @@ O projeto tem objetivo de gerar previsões por modelagem de séries temporais.
 
 ## Modelos de Previsão Utilizados
 
-- [Médias Móveis Integradas Autoregressivas (ARIMA)](./arima/arima.md)
-- [Suavização Exponencial (ETS)](./ets/ets.md)
+- [Médias Móveis Integradas Autoregressivas (ARIMA)](./models/arima/arima.md)
+- [Suavização Exponencial (ETS)](./models/ets/ets.md)
 - [Prophet](https://facebook.github.io/prophet/)
 
 # Procedimento <a name="proc"></a>
@@ -107,15 +107,16 @@ Os dados estão fragmentados em diversos documentos dispostos de forma tabular e
 
 ## 4 - Qual é o horizonte de evento das predições?
 
-Com os dados existentes, estima-se que a previsão seja de no máximo 1 ano, incluindo o conjunto de validação. O ano de 2020 (t+2) é atípico e não será possível modelar utilizando os dados da série histórica. 
+Com os dados existentes, estima-se que a previsão seja de no máximo 1 ano, incluindo o conjunto de validação. O ano de 2020 é atípico e não será possível modelar utilizando os dados da série histórica. 
 
 ## 5 - Qual a frequência de tempo que será preciso realizar a análise? 
 
-Será realizada por intervalo mensal.
+Será realizada por intervalo mensal. Informações faltantes para o período mensal serão imputadas conforme a natureza da série avaliada.
 
 ## 6 - Essa análise é estática ou será atualizada quando receber novos dados?
 
-Será estática, mas o modelo de previsão gerado poderá receber novos dados se caso aplicado o mesmo procedimento de ETL.
+O escopo inicial só permite análise estática, considerando apenas a prova de conceito da possibilidade de previsão das séries temporais. No entanto, os modelos de previsão mais adequados poderão receber novos dados se caso aplicado o mesmo procedimento de ETL.<br/>
+Alternativamente, todo o procedimento poderá ser convertido para um pipeline de tratamento automatizado no qual seria necessário apenas plugar novos dados tabulares de um arquivo *xlsx* ou *csv*.
 
 ## 7 - Qual/quais a(s) métrica(s) de análise do modelo?
 
