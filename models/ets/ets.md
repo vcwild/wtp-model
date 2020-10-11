@@ -1,5 +1,11 @@
 # Modelos Erro, Tendência e Sazonalidade (ETS)
 
+<h2 style="text-align: left">
+
+  [«](https://github.com/vcwild/wtp-model) | ETS
+
+</h2>
+
 ## Introdução
 
 Os modelos de suavização exponencial utilizam médias ponderadas de observações anteriores, fornecendo maior importância para a observação mais recente e decrescente à medida que as observações se tornam mais antigas. Erro, Tendência e Sazonalidade (ETS) são os termos aplicados no cálculo do método de suavização. De acordo com a escolha do modelo de previsão, cada um desses parâmetros pode ser iterado de forma multiplicativa, aditiva ou ser simplesmente ignorado.
