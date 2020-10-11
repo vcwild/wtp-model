@@ -2,7 +2,7 @@
 
 <h2 style="text-align: left">
 
-  [«](https://github.com/vcwild/wtp-model) | ETS
+  [« Voltar](https://github.com/vcwild/wtp-model) | ETS
 
 </h2>
 
@@ -81,3 +81,5 @@ O parâmetro de amortecimento é chamado $\Phi$, modelos com valores $\Phi$ pequ
 - **Método Linear Holt**: encontra nível, modelo aditivo para tendência linear<br/>
 - **Método Exponencial Holt**: Encontra nível, modelo multiplicativo para tendência exponencial<br/>
 - **Método Holt-Winters**: Encontra nível, aditivo para tendência, multiplicativo e aditivo para componentes sazonais
+
+[« Voltar](https://github.com/vcwild/wtp-model)

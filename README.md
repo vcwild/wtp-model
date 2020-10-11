@@ -1,23 +1,27 @@
 <h2 style="text-align: left">
 
- [«](https://github.com/vcwild/wtp-eda) | [Apresentação](#ovr) | [Procedimento](#proc) | [Dicionário de Dados](https://github.com/vcwild/wtp-eda/blob/master/dicionario_dados.md) | [Comparação de Resultados](#results) | [Q.A.](#qa) | [Referências](#refs)
+ [« Anterior](https://github.com/vcwild/wtp-eda) | [Apresentação](#ovr) | [Procedimento](#proc) | [Dicionário de Dados](https://github.com/vcwild/wtp-eda/blob/master/dicionario_dados.md) | [Resultados](#results) | [Q.A.](#qa) | [Referências](#refs)
 
 </h2>
 
 ## Etapas Anteriores
 
-- [Coleta de Dados]()
-- [Limpeza de Dados]()
-- [Tratamento de Dados]()
+- [Extração de Dados](https://github.com/vcwild/wtp-extract)
+- [Tratamento de Dados](https://github.com/vcwild/wtp-clean)
 - [Análise Exploratória](https://github.com/vcwild/wtp-eda)
 
 # Apresentação <a name="ovr"></a>
-## Previsão de Séries Temporais
 
-O projeto tem por objetivo utilizar os dados existentes nas entidades P1 e P2 da estação de tratamento de efluentes durante o período de 2012 a 2018 para ajustar a modelos de análise de série temporal e prever o comportamento das séries temporais no ano seguinte (2019).
+## Análise de Séries Temporais
+
+- [Tópico Principal de Análise de Séries Temporais](./about.md)
+
+## Objetivo
+
+O projeto tem por objetivo utilizar os dados existentes nas entidades P1 e P2 da estação de tratamento de efluentes durante o período de 2012 a 2018 para ajustar a modelos de análise de série temporal e prever o comportamento das séries no ano seguinte (2019).
 
 A entidade P1 é o local de entrada do sistema de tratamento, contendo os parâmetros do esgoto bruto que chega na estação.
-A entidade P2 é o ponto de saída do sistema de tratamento, com os parâmetros da água tratada.
+A entidade P2 é o ponto de saída do sistema de tratamento, com os parâmetros do esgoto tratado.
 
 ## Escopo do Projeto
 
@@ -130,6 +134,8 @@ Alternativamente, todo o procedimento poderá ser convertido para um pipeline de
 ## 7 - Qual/quais a(s) métrica(s) de análise do modelo?
 
 As métrica de análise utilizadas serão a raiz do erro médio quadrado (RMSE) entre os valores verdadeiros e preditos e Critério de Informação Akaike (AIC). Os modelos cuja RMSE é menor são os mais precisos, isto é, geraram menor resíduo pela proximidade entre predição e valores observados.
+
+Obs: RMSE funciona apenas para avaliar se o modelo se aproximou aos valores verdadeiros, não significando necessariamente que o modelo escolhido será o com melhor ajuste a dados futuros.
 
 # Referências <a name="refs"></a>
 <i>

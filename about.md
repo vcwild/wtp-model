@@ -1,3 +1,9 @@
+<h2 style="text-align: left">
+
+ [« Voltar](https://github.com/vcwild/wtp-eda) | SÉRIES TEMPORAIS
+
+</h2>
+
 # Introdução
 
 Série temporal univariada, ou simplesmente série temporal é o conjunto de observações de uma variável realizadas em sequência ao longo do tempo. A dimensão do tempo é uma dependência explícita inerente a cada uma das observações dentro da série. 
@@ -68,6 +74,5 @@ Plot 4 - Erro/Resíduo (diferença entre o valor observado e a linha de tendênc
 # Previsão de Série Temporal
 
 Trata-se do uso de dados históricos para prever o comportamento das observações da série temporal. Pode também ser chamada de extrapolação do modelo de análise. 
-Na previsão de série temporal deveremos separar o conjunto de dados em treino/teste ou treino/teste/validação. O conjunto de dados de treino é ajustado o modelo de análise e o conjunto de testes é utilizado para verificar a acurácia da previsão realizada. 
 
-O conjunto validador é utilizado para avaliação pós modelagem e deve ser consultado uma só vez, não permitindo ser utilizado de forma recursiva para ajuste dos dados de treino aos dados do validador, assim garantindo que os dados de comportamento da série do validador não sejam vazados ao ajuste do modelo de treino. Na falta de um conjunto validador, os dados de teste são considerados validadores.
+Na previsão de série temporal devemos separar o conjunto de dados em treino/teste ou treino/teste/validação. O conjunto de dados de treino é ajustado ao modelo de análise e o conjunto de testes é utilizado para verificar a acurácia da previsão realizada. O conjunto validador é utilizado para avaliação pós modelagem e deve ser consultado uma só vez, não permitindo ser utilizado de forma recursiva para ajuste dos dados de treino aos dados do validador, assim garantindo que os dados de comportamento da série do validador não sejam vazados ao ajuste do modelo de treino. Na ausência de um conjunto validador, os dados de teste são considerados validadores.

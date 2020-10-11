@@ -2,7 +2,7 @@
 
 <h2 style="text-align: left">
 
-  [«](https://github.com/vcwild/wtp-model) | ARIMA
+  [« Voltar](https://github.com/vcwild/wtp-model) | ARIMA
 
 </h2>
 
@@ -11,6 +11,8 @@
 ARIMA são modelos de previsão de séries temporais que utilizam autocorrelação, diferenciação e médias móveis para estimar e prever o comportamento dos dados. Um modelo SARIMA também leva em consideração a sazonalidade.
 
 Os modelos ARIMA utilizam os parâmetros "p", "d", "q", "P", "D" e "Q". Cada uma das letras está relacionada a uma parcela do modelo ARIMA. As letras em minúsculo denotam os parâmetros não sazonais da série e as letras em maúsculo os parâmetros sazonais.
+
+## Terminologia
 
 **AR (Auto-regressivo)**: modelo utilizado para representação de um tipo de processo aleatório que varia de acordo com o tempo. Está relacionado aos parâmetros "p" e "P" (número de defasagens) do modelo ARIMA.
 
@@ -41,3 +43,5 @@ Onde L é verossimilhança dos dados, p é a ordem da parte auto-regressiva e q 
 <img src="https://render.githubusercontent.com/render/math?math=AIC_{c}=AIC+(2(p+q+k+1)(p+q+k+2))/(T-p-q-k-2)" />
 
 A principal utilidade do uso de AIC é tentar aproximar os modelos da realidade dos dados observados. em um modelo ARIMA podemos utilizar também o critério BIC em conjunto de AIC para tentar melhorar o ajuste do modelo.
+
+[« Voltar](https://github.com/vcwild/wtp-model)
