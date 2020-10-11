@@ -2,9 +2,7 @@
 
 ## Introdução
 
-Os modelos de suavização exponencial utilizam médias ponderadas de observações anteriores, fornecendo maior importância para a observação mais recente e decrescente à medida que as observações se tornam mais antigas.
-
-Erro, Tendência e Sazonalidade (ETS) são os termos aplicados no cálculo do método de suavização. De acordo com a escolha do modelo de previsão, cada um desses parâmetros pode ser iterado de forma multiplicativa, aditiva ou ser simplesmente ignorado.
+Os modelos de suavização exponencial utilizam médias ponderadas de observações anteriores, fornecendo maior importância para a observação mais recente e decrescente à medida que as observações se tornam mais antigas. Erro, Tendência e Sazonalidade (ETS) são os termos aplicados no cálculo do método de suavização. De acordo com a escolha do modelo de previsão, cada um desses parâmetros pode ser iterado de forma multiplicativa, aditiva ou ser simplesmente ignorado.
 
 # Métodos de Modelagem Exponencial
 ## Aditivo
@@ -27,7 +25,7 @@ Erro, Tendência e Sazonalidade (ETS) são os termos aplicados no cálculo do m�
 8 - Tendência exponencial, sazonalidade constante<br/>
 9 - Tendência exponencial, sazonalidade aumentando
 
-# Modelos de ETS
+# Modelos ETS
 
 - [Suavização Simples (SES)](#ses)<br/>
 - [Método Linear de Holt](#hl)<br/>
@@ -73,7 +71,7 @@ O parâmetro de amortecimento é chamado $\Phi$, modelos com valores $\Phi$ pequ
 
 # Resumo
 
-- SES: encontra o nível da série temporal<br/>
-- Método Linear Holt: encontra nível, modelo aditivo para tendência linear<br/>
-- Método Exponencial Holt: Encontra nível, modelo multiplicativo para tendência exponencial<br/>
-- Método Holt-Winters: Encontra nível, aditivo para tendência, multiplicativo e aditivo para componentes sazonais
+- **SES**: encontra o nível da série temporal<br/>
+- **Método Linear Holt**: encontra nível, modelo aditivo para tendência linear<br/>
+- **Método Exponencial Holt**: Encontra nível, modelo multiplicativo para tendência exponencial<br/>
+- **Método Holt-Winters**: Encontra nível, aditivo para tendência, multiplicativo e aditivo para componentes sazonais
