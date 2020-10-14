@@ -1,6 +1,6 @@
 <h2 style="text-align: left">
 
- [« Voltar](https://github.com/vcwild/wtp-eda) | SÉRIES TEMPORAIS
+ [« Voltar](https://github.com/vcwild/wtp-model) | SÉRIES TEMPORAIS
 
 </h2>
 
